@@ -5,10 +5,10 @@ app.use(express.json())
 const dotenv = require("dotenv")
 dotenv.config()
 
-const middleware = require("./GlobalMiddleware")
+const middleware = require("./GlobalMiddleware/GlobalMiddleware")
 app.use(middleware)
 
-const routes = require("./Routes")
+const routes = require("./Routes/Routes")
 app.use("/api/routes", routes)
 
  

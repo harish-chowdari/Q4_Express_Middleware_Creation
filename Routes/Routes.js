@@ -3,17 +3,17 @@ const router = express.Router()
 
 
 router.get("/", (req,res)=>{
-    res.json("Hello world!")
+    res.json({msg:"Hello world!"})
 })  
 
 
 router.get("/getUsers", (req,res)=>{
-    res.json("GET request method")
+    res.json({msg:"GET request method"})
 })
 
 
 router.post("/postUsers", (req,res)=>{
-    res.json("POST request method")
+    res.json({msg:"POST request method"})
 })
 
 

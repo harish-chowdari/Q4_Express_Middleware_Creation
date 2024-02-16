@@ -8,5 +8,5 @@ module.exports = function logging(req,res,next){
     const accessToken = req.headers.authorization || "No access token"
 
     console.log(`[${timestamps}] ${Method}:${URL}, AccessToken:"${accessToken}"`)
-    next()
+    next() 
 }
